@@ -13,22 +13,42 @@ header {
 
 body {
 	width: 960px;
-	background-image: url("../images/crossword.png")
+	background-image: url("../images/crossword.png");
+	font-family: 'Comfortaa', cursive;
 }
 li{
 	display: inline;
+	border-right-style: solid;
+	border-right-width: 1px;
+	padding-right: 6px;
 }
+
+li:last-child{
+	border: none;
+}
+
+/*trying to clear
+.clear{
+	overflow: auto;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}*/
 
 #name {
 	padding: 20px;
 	background: teal;
 	float: left;
 	color: #fff;
-	font-size:x-large
+	font-size:x-large;
+	font-family: 'Comfortaa', cursive;
 }
  .links {
 	float: right;
 	padding: 20px;
+	font-family: 'Fredericka the Great', cursive;
  }
 /* Main Content */
 .content::after {
