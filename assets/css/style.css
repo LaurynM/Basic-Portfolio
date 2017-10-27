@@ -110,6 +110,15 @@ li:last-child{
 
 /*Footer*/
 footer {
-	position:fixed;
-	float:bottom;
+	clear: both;
+	color: #fff;
+	background-color: #666;
+	border-top-style: solid;
+	border-top-color: teal;
+	border-top-width: 8px;
+	text-align: center;
+}
+#copyright{
+	vertical-align: middle;
+	padding:40px;
 }
