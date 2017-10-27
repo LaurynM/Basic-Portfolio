@@ -1,19 +1,18 @@
 /*Header*/
-header::after {
-content:"";
-display:block;
-clear:both;
-}
 header {
 	font-family: 'Georgia', Times, 'Times New Roman', serif;
 	background: #fff;
 	border-left: 150px solid #fff;
 }
-
+header::after {
+content:"";
+display:block;
+clear:both;
+}
 
 body {
-	width: 960px;
-	background-image: url("../images/crossword.png");
+	/*width: 960px;*/
+	background-image: url("../images/pinkrice.png");
 	font-family: 'Comfortaa', cursive;
 }
 li{
@@ -21,6 +20,8 @@ li{
 	border-right-style: solid;
 	border-right-width: 1px;
 	padding-right: 6px;
+	padding-top: 6px;
+	padding-bottom: 6px;
 }
 
 li:last-child{
@@ -30,25 +31,26 @@ li:last-child{
 /*trying to clear
 .clear{
 	overflow: auto;
-}
+}*/
 .clearfix::after {
     content: "";
     clear: both;
     display: table;
-}*/
+}
 
 #name {
-	padding: 20px;
+	padding: 29px;
 	background: teal;
 	float: left;
 	color: #fff;
-	font-size:x-large;
+	font-size:200%;
 	font-family: 'Comfortaa', cursive;
 }
  .links {
 	float: right;
 	padding: 20px;
-	font-family: 'Fredericka the Great', cursive;
+	font-family: 'Comfortaa', cursive;
+	margin: 17px;
  }
 /* Main Content */
 .content::after {
