@@ -64,11 +64,21 @@ li:last-child{
 	margin-left: 150px;
 	width: 650px;
 }
+
+.content h1 {
+	font-size: 150%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
 /*.content::after {
 	content:"";
 	display:block;
 	clear:both;
 }*/
+#headshot {
+	width: 248px;
+	height: 372px;
+}
 
 /*Social*/
 .social {
@@ -77,9 +87,14 @@ li:last-child{
 	border: 2px solid #ddd;
 	padding:30px;
 	margin: 40px 40px 40px 40px;
-	width:270px;
-	height:200px;
+	width:210px;
+	height:140px;
 	text-align: center;
+}
+
+.social h1 {
+	font-size: 125%;
+	padding-bottom: 10px;
 }
 /*.social::after {
 	content:"";
@@ -88,6 +103,7 @@ li:last-child{
 }*/
 
 .logo{
+	padding-top: 20px;
 	height:62px;
 	width: 62px;
 }
