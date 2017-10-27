@@ -1,46 +1,57 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<!-- Reset style -->
+		<link rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
+		<!-- link to css file -->
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-		<title>Contact Lauryn McFarland</title>
+		<!-- Comfortaa font -->
+		<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+		<title>Lauryn McFarland - Contact</title>
 	</head>
 	<body>
 		<!-- Navigation Pane -->
 		<header>
-			<h1>Lauryn McFarland</h1>
-			<p><a href="index.html">About</a></p>
-			&vert;
-			<p><a href="portfolio.html">Portfolio</a></p>
-			&vert;
-			<p><a href="contact.html">Contact</a></p>
+			<h1 id="name">Lauryn McFarland
+			</h1>
+			<ul class="links">
+				<li><a href="index.html">About</a></li>
+				<li><a href="portfolio.html">Portfolio</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
 		</header>
 
 		<!-- Contact Fields -->
-		<div>
+		<div class="content">
 			<h1>Email Me</h1>
 			<hr>
 			<form>
 				Name<br>
-				<input type="text" name="name"><br>
+				<input type="text" name="name" value="Full Name"><br>
 				Email<br>
-				<input type="text" name="email"><br>
+				<input type="text" name="email" value="example@gmail.com"><br>
 				Message<br>
-				<input type="text" name="message"><br><br>
-				<input type="submit" value="Submit">
+				<input id="message" type="text" name="message"><br><br>
+				<input id="submitButton" type="submit" value="Submit" onclick="msg()">
 			</form>		
 		</div>
 
 		<!-- Social Links -->
-		<div>
-			<h3>Connect With Me</h3>
+		<div class="social">
+			<h1>Connect With Me</h1>
 			<hr>
-			<img src="github.png">
-			<img src="#">
-			<img src="stackoverflow.png">
+			<img class= "logo" src="assets/images/github.png">
+			<img class= "logo" src="assets/images/linkedin.png">
+			<img class= "logo" src="assets/images/stackoverflow.png">
 		</div>
 		<!-- Copyright -->
 		<footer>
-			<p>&copy; Copyright 2017 Lauryn McFarland</p>
+			<p id="copyright">&copy; Copyright 2017 Lauryn McFarland</p>
 		</footer>
+		<script>
+			function msg() {
+			    alert("This function is not available.");
+			}
+		</script>
 	</body>
 </html>
