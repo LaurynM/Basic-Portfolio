@@ -31,7 +31,9 @@
 				Email<br>
 				<input type="text" name="email" value="example@gmail.com"><br>
 				Message<br>
-				<input id="message" type="text" name="message"><br><br>
+<!-- 				<input id="message" type="text" name="message"> -->
+				<textarea id="message" name="message" rows="10" cols="90"></textarea>
+				<br><br>
 				<input id="submitButton" type="submit" value="Submit" onclick="msg()">
 			</form>		
 		</div>
@@ -40,9 +42,15 @@
 		<div class="social">
 			<h1>Connect With Me</h1>
 			<hr>
-			<img class= "logo" src="assets/images/github.png">
-			<img class= "logo" src="assets/images/linkedin.png">
-			<img class= "logo" src="assets/images/stackoverflow.png">
+			<a href="https://github.com/LaurynM">
+				<img class= "logo" src="assets/images/github.png">
+			</a>
+			<a href="https://www.linkedin.com/in/lauryn-mcfarland-676a2b3a/">
+				<img class= "logo" src="assets/images/linkedin.png">
+			</a>
+			<a href="https://stackoverflow.com/users/8662126/lmc">
+				<img class= "logo" src="assets/images/stackoverflow.png">
+			</a>
 		</div>
 		<!-- Copyright -->
 		<footer>
@@ -50,7 +58,7 @@
 		</footer>
 		<script>
 			function msg() {
-			    alert("This function is not available.");
+			    alert("This function is not yet available. Please check again later!");
 			}
 		</script>
 	</body>
