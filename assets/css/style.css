@@ -1,6 +1,9 @@
 /*Header*/
 header {
 	font-family: 'Georgia', Times, 'Times New Roman', serif;
+/* 	background-image: url("../images/blackScales.png"); */
+/* 	background: #f393ce;
+	border-left: 150px solid #f393ce; */
 	background: #fff;
 	border-left: 150px solid #fff;
 }
@@ -11,9 +14,12 @@ header::after {
 }
 
 body {
-	background-image: url("../images/pinkrice.png");
+	background-image: url("../images/blackScales.png");
 	font-family: 'Comfortaa', cursive;
+/* 	trying to fix footer */
+/* 	padding-bottom: 104px;  */
 }
+
 li{
 	display: inline;
 	border-right-style: solid;
@@ -39,7 +45,7 @@ li:last-child{
 
 #name {
 	padding: 29px;
-	background: teal;
+	background: goldenrod;
 	float: left;
 	color: #fff;
 	font-size:200%;
@@ -52,6 +58,24 @@ li:last-child{
 	margin: 17px;
  }
 
+/* remove underlines from links */
+.links a:link {
+    text-decoration: none;
+    color: goldenrod;
+}
+
+.links a:visited {
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+    color: gold;
+}
+
+.links a:active {
+    text-decoration: underline;
+}
 
 /* Main Content */
 /*About Me content*/
@@ -60,7 +84,7 @@ li:last-child{
 	clear: both;
 	overflow: auto;
 	background: #fff;
-	border: 2px solid #ddd;
+	border: 2px solid goldenrod;
 	padding:30px;
 	margin-top: 40px;
 	margin-bottom: 150px;
@@ -93,7 +117,7 @@ form {
 }
 #submitButton{
 	color: #fff;
-	background-color: teal;
+	background-color: goldenrod;
 	border:0;
 	height: 40px;
 	width: 116px;
@@ -109,22 +133,36 @@ form {
 
 /*portfolio content*/
 .portfolio{
-	/*overflow: auto;*/
+	overflow: auto;
+	position: relative;
+	width: 295px;
+	height: 220px;
+	float: left;
+	margin:10px;
+/* 	highlight the borders of the portfolio blocks */
+/* 	border-style:solid; 
+	border-width:thin; */
 }
 
 .portfolio p{
-	background-color: teal;
-	height: 60px;
+	position:absolute;
+	bottom: 40px;
+	width: 100%;
+	left: 0;
+	background-color: goldenrod;
+/* 	height: 60px; */
 	width: 275px;
-	float:left;
-
+	text-align:center;
+	color: #fff;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .portfolio img {
 	width: 275px;
 	height: 200px;
 	float: left;
-	margin: 10px;
+/* 	margin: 10px; */
 }
 
 
@@ -134,7 +172,7 @@ form {
 .social {
 	float:left;
 	background: #fff;
-	border: 2px solid #ddd;
+	border: 2px solid goldenrod;
 	padding:30px;
 	margin: 40px 40px 40px 40px;
 	width:210px;
@@ -146,13 +184,31 @@ form {
 	font-size: 125%;
 	padding-bottom: 10px;
 }
-
-.logo{
-	padding-top: 20px;
-	height:62px;
+.social hr {
+	margin-bottom: 25px;
+}
+.social a {
 	width: 62px;
 }
 
+.logo{
+	height:62px;
+	width: 62px;
+	border-style: solid;
+	border-width:2px;
+}
+
+/* formant social contact links */
+.social a:link, a:visited {
+    text-decoration: none;
+    color: goldenrod;
+}
+.social a:hover {
+    color: gold;
+}
+.social a:active {
+    text-decoration: none;
+}
 
 
 /*Footer*/
@@ -161,10 +217,15 @@ footer {
 	color: #fff;
 	background-color: #666;
 	border-top-style: solid;
-	border-top-color: teal;
+	border-top-color: goldenrod;
 	border-top-width: 8px;
 	text-align: center;
 	width: 100%;
+/* 	trying to fix footer */
+	/* 	position:absolute;
+	bottom:0; */
+	/* 	height: 104px; */
+	/* 	margin-top: -104px; */
 }
 #copyright{
 	vertical-align: middle;
