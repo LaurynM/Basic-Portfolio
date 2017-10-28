@@ -1,9 +1,6 @@
 /*Header*/
 header {
-	font-family: 'Georgia', Times, 'Times New Roman', serif;
-/* 	background-image: url("../images/blackScales.png"); */
-/* 	background: #f393ce;
-	border-left: 150px solid #f393ce; */
+	/*font-family: 'Georgia', Times, 'Times New Roman', serif;*/
 	background: #fff;
 	border-left: 150px solid #fff;
 }
@@ -44,18 +41,21 @@ li:last-child{
 }
 
 #name {
-	padding: 29px;
+	padding: 27px;
 	background: goldenrod;
 	float: left;
 	color: #fff;
-	font-size:200%;
-	font-family: 'Comfortaa', cursive;
+	font-family: 'Caudex', serif;
+	font-size: 225%;
+	/*margin is displayed when hosted on github. try to remove.*/
+	margin: 0; 
 }
  .links {
 	float: right;
 	padding: 20px;
 	font-family: 'Comfortaa', cursive;
-	margin: 17px;
+	font-size: 22px;
+	margin: 14px;
  }
 
 /* remove underlines from links */
@@ -89,7 +89,8 @@ li:last-child{
 	margin-top: 40px;
 	margin-bottom: 150px;
 	margin-left: 150px;
-	width: 650px;
+	/*650-(2*padding)-(2*border)=586px*/
+	width: 586px;
 }
 
 .content h1 {
@@ -135,10 +136,10 @@ form {
 .portfolio{
 	overflow: auto;
 	position: relative;
-	width: 295px;
+	width: 275px;
 	height: 220px;
 	float: left;
-	margin:10px;
+	margin:8px;
 /* 	highlight the borders of the portfolio blocks */
 /* 	border-style:solid; 
 	border-width:thin; */
@@ -173,9 +174,10 @@ form {
 	float:left;
 	background: #fff;
 	border: 2px solid goldenrod;
-	padding:30px;
+	padding:20px;
 	margin: 40px 40px 40px 40px;
-	width:210px;
+	/*270-(2*padding)-(2*border)= 206px*/
+	width:226px;
 	height:140px;
 	text-align: center;
 }
